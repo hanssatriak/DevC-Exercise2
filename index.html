@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Exercise 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Calculator</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <center>
-        <h1>Kalkulator</h1>
-    </center>
+
+    <div class="container" align="center">
+        <p align="center" class="judul"><b><i>Kalkulator Sederhana</i></b></p>
+    </div>
+
+    <div class="container" align="center">
+        <input type="number" id="nomor1" value="" placeholder="Angka pertama"><br><br>
+        <input type="number" id="nomor2" value="" placeholder="Angka kedua"><br><br>
+        <input type="number" id="hasil" value="" placeholder="Hasil"><br><br>
+    </div>
+    
+    <br>
+
+    <div class="container" align="center">
+        <button class="btn btn-primary" type="number" onclick="kali()">*</button>
+        <button class="btn btn-primary" type="number" onclick="bagi()">/</button>
+        <button class="btn btn-primary" type="number" onclick="jumlah()">+</button>
+        <button class="btn btn-primary" type="number" onclick="kurang()">-</button>
+        <button class="btn btn-primary" type="number" onclick="reset()">AC</button>
+    </div>
+
 </body>
+
+    <script src="script.js">
+    </script>
 </html>
